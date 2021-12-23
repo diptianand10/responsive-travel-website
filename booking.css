@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Dancing+Script:wght@500&family=Merriweather:ital,wght@0,300;1,300&display=swap');
+
+h3{
+    font-size: 3rem !important;
+}
+.booking{
+    min-height: 100vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    position: relative;
+    padding:2rem 10rem;
+    background-image: linear-gradient(to right, rgb(97, 186, 241) ,rgb(56, 119, 243));
+  }
+
+.booking .form-container form{
+  margin-left: 4rem;
+  margin-top: 10rem;
+  padding:1rem;
+  width:40rem;
+  background: #eee;
+  /* box-shadow: 0 .5rem .7rem rgba(5, 5, 5, 0.966); */
+  box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+}
+
+.booking .form-container form h3{
+  color:#333;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.booking .form-container form span{
+  color:#0098a1;
+  font-size: 2rem;
+  margin:.5rem 0;
+  display: block;
+}
+
+.booking .form-container form .input1{
+  width: 100%;
+  padding:0 1rem;
+  height:3rem;
+  font-size: 1.2rem;
+  background:#eee;
+  border:none;
+  outline: none;
+  color:#000;
+  border-radius: 1rem;
+  background: #e0e0e0;
+  box-shadow: inset 12px 12px 5px #cacaca,
+            inset -12px -12px 5px #f6f6f6;
+}
+
+.booking .form-container form input[type="submit"]{
+  width:15rem;
+  color:#fff;
+  background:#0098a1;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-top: 2rem;
+  transition: .2s linear;
+  border-radius: .5rem;
+}
+
+.booking .form-container form input[type="submit"]:hover{
+  border:.2rem solid #0098a1;
+  color:#0098a1;
+  background: none;
+}
+
+
+
+/* Media queries */
+
+
+@media (max-width: 768px){
+
+    .booking .form-container form{
+        margin: 15rem 2rem;
+        padding:1rem;
+        width:49rem;
+
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .booking .form-container form{
+        width:33rem;
+    }
+        
+}
